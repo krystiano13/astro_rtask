@@ -1,8 +1,27 @@
 ---
 import Layout from '../components/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+import Intro from '../components/Intro.astro';
 ---
 
 <Layout>
 	<Navbar />
+	<Intro />
 </Layout>
+
+<style>
+	* {
+		margin : 0;
+		padding : 0;
+		box-sizing: border-box;
+	}
+</style>
+
+<script>
+  import AOS from "aos";
+
+  AOS.init({
+    duration: 450,
+    once: false,
+  });
+</script>

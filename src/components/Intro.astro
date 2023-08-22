@@ -1,0 +1,339 @@
+---
+---
+
+<section class="Intro container-fluid row">
+  <div
+    class="Intro__left column col-lg-7 d-flex flex-column justify-content-center"
+  >
+    <h1 data-aos="fade-right">Nowoczesna aranżacja Twojego ogrodu</h1>
+    <p data-aos="fade-right">
+      Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
+      realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem
+      do każdego projektu.
+    </p>
+    <div data-aos="fade-right" class="Intro__left__buttons d-flex">
+      <button class="me-4 button-filled text-white border-0">
+        Skontaktuj się z nami
+      </button>
+      <button
+        class="me-4 align-items-center d-flex justify-content-center button-default"
+      >
+        Zobacz nasze realizacje
+        <img class="button-icon ms-2" alt="arrow" src="./assets/arrow.svg" />
+      </button>
+    </div>
+  </div>
+
+  <!-- Slider -->
+
+  <div
+    class="Intro__right column col-lg-5 d-flex justify-content-end align-items-end"
+  >
+    <div class="Intro__right__slideButtons d-flex">
+      <button
+        class="Intro__right__slideButtons__btn"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="prev"
+      >
+        <img alt="arrow left" src="./assets/ButtonArrow.svg" />
+      </button>
+
+      <button
+        class="Intro__right__slideButtons__btn"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="next"
+      >
+        <img alt="arrow right" id="right" src="./assets/ButtonArrow.svg" />
+      </button>
+    </div>
+
+    <div
+      id="hero-carousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            loading="eager"
+            fetchpriority="high"
+            class="Intro-icon"
+            alt="garden"
+            src="./assets/bg.webp"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            loading="lazy"
+            class="Intro-icon"
+            alt="garden"
+            src="./assets/garden.webp"
+          />
+        </div>
+
+        <div class="carousel-item">
+          <img
+            loading="lazy"
+            class="Intro-icon"
+            alt="garden"
+            src="./assets/garden2.webp"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .Intro__right {
+    width: calc(5 / 12 * 100%);
+    height: 100%;
+    min-height: 600px;
+  }
+  @media screen and (max-width: 992px) {
+    .Intro__right {
+      width: 100vw;
+      min-height: 400px;
+    }
+  }
+  .Intro__right__slideButtons__btn {
+    width: 7.5rem;
+    height: 7.5rem;
+    border: none;
+    background-color: #f5f0ec;
+    transition: background-color 250ms;
+    will-change: background-color;
+  }
+  @media screen and (min-width: 2400px) {
+    .Intro__right__slideButtons__btn {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+  @media screen and (min-width: 3200px) {
+    .Intro__right__slideButtons__btn {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+  .Intro__right__slideButtons__btn img {
+    width: 25%;
+    height: 25%;
+  }
+  .Intro__right__slideButtons__btn #right {
+    transform: scaleX(-1);
+  }
+  .Intro__right__slideButtons__btn:hover {
+    background-color: #fae4d1;
+  }
+  .Intro .column .Intro-icon {
+    width: 100%;
+    height: 55rem;
+    min-height: 600px;
+    object-fit: cover;
+  }
+  @media screen and (orientation: portrait) {
+    .Intro .column .Intro-icon {
+      height: 93vh;
+    }
+  }
+  @media screen and (min-width: 2400px) {
+    .Intro .column .Intro-icon {
+      height: 75rem;
+    }
+  }
+  @media screen and (min-width: 3200px) {
+    .Intro .column .Intro-icon {
+      height: 100rem;
+    }
+  }
+  .Intro__left {
+    background-color: var(--beige);
+    height: 55rem;
+  }
+  @media screen and (max-width: 992px) {
+    .Intro__left {
+      width: 100vw;
+      height: 93vh;
+      min-height: 600px;
+    }
+  }
+  .Intro__left h1,
+  .Intro__left p,
+  .Intro__left__buttons {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 5rem;
+  }
+  @media screen and (max-width: 992px) {
+    .Intro__left h1,
+    .Intro__left p,
+    .Intro__left__buttons {
+      margin-left: 2rem;
+    }
+  }
+  @media screen and (min-width: 2400px) {
+    .Intro__left h1,
+    .Intro__left p,
+    .Intro__left__buttons {
+      margin-top: 3.5rem;
+      margin-bottom: 3.5rem;
+    }
+  }
+  @media screen and (min-width: 3200px) {
+    .Intro__left h1,
+    .Intro__left p,
+    .Intro__left__buttons {
+      margin-top: 5rem;
+      margin-bottom: 5rem;
+      margin-left: 10rem;
+    }
+  }
+  .Intro__left h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    max-width: 60%;
+  }
+  @media screen and (max-width: 700px) {
+    .Intro__left h1 {
+      max-width: 85%;
+      font-size: 2rem;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    .Intro__left h1 {
+      font-size: 5rem;
+      max-width: 65%;
+    }
+  }
+  @media screen and (min-width: 2400px) {
+    .Intro__left h1 {
+      font-size: 6.5rem;
+    }
+  }
+  @media screen and (min-width: 3200px) {
+    .Intro__left h1 {
+      font-size: 9rem;
+      max-width: 55%;
+    }
+  }
+  .Intro__left p {
+    max-width: 65%;
+    font-size: 1.2rem;
+  }
+  @media screen and (max-width: 700px) {
+    .Intro__left p {
+      max-width: 80%;
+      font-size: 1rem;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    .Intro__left p {
+      max-width: 50%;
+      font-size: 1.26rem;
+    }
+  }
+  @media screen and (min-width: 2400px) {
+    .Intro__left p {
+      max-width: 60%;
+      font-size: 2rem;
+    }
+  }
+  @media screen and (min-width: 3200px) {
+    .Intro__left p {
+      max-width: 60%;
+      font-size: 3rem;
+    }
+  }
+  .Intro__left__buttons {
+    width: auto;
+  }
+  @media screen and (max-width: 700px) {
+    .Intro__left__buttons {
+      flex-direction: column;
+    }
+  }
+  .Intro__left__buttons .button-default,
+  .Intro__left__buttons button {
+    width: auto;
+    font-size: 1rem;
+    border-radius: 10rem;
+    background-color: transparent;
+    border: solid 0.15rem var(--green);
+    color: var(--green);
+    padding: 0.8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    transition: background 250ms;
+  }
+  @media screen and (max-width: 700px) {
+    .Intro__left__buttons .button-default,
+    .Intro__left__buttons button {
+      font-size: 0.8rem;
+      padding: 0.5rem;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      margin-top: 1rem;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .Intro__left__buttons .button-default,
+    .Intro__left__buttons button {
+      font-size: 0.9rem;
+    }
+  }
+  @media screen and (min-width: 1400px) {
+    .Intro__left__buttons .button-default,
+    .Intro__left__buttons button {
+      font-size: 1.3rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  @media screen and (min-width: 2400px) {
+    .Intro__left__buttons .button-default,
+    .Intro__left__buttons button {
+      font-size: 2.1rem;
+      padding: 1rem;
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+  @media screen and (min-width: 3200px) {
+    .Intro__left__buttons .button-default,
+    .Intro__left__buttons button {
+      font-size: 3rem;
+      padding: 1.6rem;
+      padding-left: 3.75rem;
+      padding-right: 3.75rem;
+    }
+  }
+  .Intro__left__buttons .button-default .button-icon,
+  .Intro__left__buttons button .button-icon {
+    height: 1.7ch;
+  }
+  .Intro__left__buttons .button-default:hover {
+    background-color: #f5f0ec;
+  }
+  .Intro__left__buttons .button-filled {
+    background-color: var(--green);
+  }
+  .Intro__left__buttons .button-filled:hover {
+    background-color: var(--lightGreen);
+  }
+  .slide {
+    position: fixed;
+    width: calc(5 / 12 * 100%);
+    z-index: -1;
+  }
+  @media screen and (max-width: 992px) {
+    .slide {
+      position: absolute;
+      width: 100vw;
+    }
+  }
+</style>

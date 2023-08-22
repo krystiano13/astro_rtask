@@ -1,0 +1,288 @@
+---
+---
+
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/logo.svg" alt="logo" />
+      </a>
+      <div
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#nav"
+      >
+        <div
+          class="navbar-toggler-icon d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="toggler-icon-stripe"></div>
+          <div class="toggler-icon-stripe"></div>
+          <div class="toggler-icon-stripe"></div>
+        </div>
+      </div>
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav d-flex justify-content-end align-items-center">
+          <li
+            id="dropdown"
+            class="dropdown nav-item dropdownItem d-none d-lg-block"
+          >
+            <button class="dropdown-toggle" data-bs-toggle="dropdown">
+              Oferta
+            </button>
+
+            <ul class="dropdown-menu">
+              <li class="dropdownListItem">
+                <a href="#offer" class="dropdown-item">Projekty</a>
+              </li>
+              <li class="dropdownListItem">
+                <a href="#offer" class="dropdown-item">Wizualizacje</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item listItem">
+            <a href="#about" class="nav-link">O firmie</a>
+          </li>
+
+          <li class="nav-item listItem">
+            <a href="#gallery" class="nav-link">Realizacje</a>
+          </li>
+
+          <li class="nav-item listItem">
+            <a href="#contact" class="nav-link">Kontakt</a>
+          </li>
+
+          <li class="nav-item listItem d-block d-lg-none">
+            <a href="#offer" class="nav-link">Projekty</a>
+          </li>
+
+          <li class="nav-item listItem d-block d-lg-none">
+            <a href="#offer" class="nav-link">Wizualizacje</a>
+          </li>
+
+          <li class="nav-item d-block d-lg-none">
+            <form
+              class="search-bar search-bar-static position-static d-block d-lg-none"
+            >
+              <input placeholder="Czego potrzebujesz ?" />
+              <button type="submit">Szukaj</button>
+            </form>
+          </li>
+
+          <li id="search-toggler" class="nav-item d-none d-lg-block">
+            <img src="./assets/search.svg" alt="search icon" />
+          </li>
+        </ul>
+
+        <form
+          id="searchBar"
+          class="search-bar search-bar-hidden d-none d-lg-block"
+        >
+          <input placeholder="Czego potrzebujesz ?" />
+          <button type="submit">Szukaj</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const searchBar = document.querySelector("#searchBar");
+  const searchToggler = document.querySelector("#search-toggler");
+
+  const toggleSearchBar = () => {
+    searchBar.classList.toggle("search-bar-hidden");
+  };
+
+  if (searchToggler && searchBar) {
+    searchToggler.addEventListener("click", toggleSearchBar);
+  }
+</script>
+
+<style>
+  .navbar-nav {
+    width: 100%;
+  }
+  .navbar-nav li > * {
+    color: black;
+  }
+  .navbar-nav li {
+    margin-right: 0rem;
+    cursor: pointer;
+  }
+  .navbar-nav .listItem {
+    position: relative;
+    transition: transform 250ms;
+  }
+  .navbar-nav .listItem a {
+    color: black;
+  }
+  .navbar-nav .listItem::after {
+    width: 100%;
+    height: 5%;
+    background-color: var(--dark);
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateY(-300%) scaleX(0);
+    transition: transform 250ms;
+  }
+  .navbar-nav .listItem:hover {
+    transform: translateY(-5%);
+  }
+  .navbar-nav .listItem:hover a {
+    color: black;
+  }
+  .navbar-nav .listItem:active a {
+    color: black;
+  }
+  .navbar-nav .listItem:hover::after {
+    transform: translateY(-300%) scaleX(1);
+  }
+  .navbar-nav .dropdownListItem {
+    margin-right: 0;
+  }
+  @media screen and (min-width: 992px) {
+    .navbar-nav li {
+      margin-right: 2rem;
+    }
+  }
+  @media screen and (min-width: 2400px) {
+    .navbar-nav li {
+      margin-right: 3rem;
+    }
+    .navbar-nav li > * {
+      font-size: 1.5rem;
+    }
+    .navbar-nav li > img {
+      height: 2rem;
+    }
+  }
+  @media screen and (min-width: 3200px) {
+    .navbar-nav li {
+      margin-right: 4rem;
+    }
+    .navbar-nav li > * {
+      font-size: 2.5rem;
+    }
+    .navbar-nav li > img {
+      height: 3rem;
+    }
+  }
+  .navbar-brand {
+    padding-left: 1rem;
+  }
+  @media screen and (min-width: 2400px) {
+    .navbar-brand {
+      height: 2.5rem;
+    }
+  }
+  @media screen and (min-width: 3200px) {
+    .navbar-brand {
+      height: 4rem;
+    }
+  }
+  .navbar-brand img {
+    height: 100%;
+  }
+  .navbar-toggler-icon {
+    height: 90%;
+  }
+  .navbar-toggler-icon .toggler-icon-stripe {
+    width: 2rem;
+    background-color: black;
+    height: 0.25rem;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .dropdownItem button {
+    border: none;
+    background-color: transparent;
+  }
+  .search-bar {
+    position: fixed;
+    top: 4rem;
+    right: 0;
+    background-color: white;
+    padding: 1rem;
+    opacity: 1;
+    transition: transform 250ms, opacity 250ms;
+    will-change: transform, opacity;
+  }
+  .search-bar input {
+    font-size: 1rem;
+    padding: 0.25rem;
+    width: 20rem;
+    border: solid 2px #444;
+    outline: none;
+    transition: border-color 250ms;
+  }
+  .search-bar input:focus {
+    border: solid 2px var(--lightGreen);
+  }
+  .search-bar button {
+    padding: calc(0.25rem + 1px);
+    width: 6rem;
+    border: none;
+    background-color: var(--green);
+    color: white;
+    transition: background-color 250ms;
+  }
+  .search-bar button:hover {
+    background-color: var(--lightGreen);
+  }
+  @media screen and (min-width: 2400px) {
+    .search-bar {
+      top: 6rem;
+      padding: 1.5rem;
+    }
+    .search-bar input {
+      font-size: 1.25rem;
+      padding: 0.5rem;
+      width: 24rem;
+      margin-right: 1rem;
+    }
+    .search-bar button {
+      font-size: 1.25rem;
+      padding: 0.5rem;
+      width: 8rem;
+    }
+  }
+  @media screen and (min-width: 3200px) {
+    .search-bar {
+      top: 10rem;
+      padding: 2.5rem;
+    }
+    .search-bar input {
+      font-size: 2.25rem;
+      padding: 1rem;
+      width: 40rem;
+      margin-right: 2rem;
+    }
+    .search-bar button {
+      font-size: 2.25rem;
+      padding: 1rem;
+      width: 16rem;
+    }
+  }
+  .search-bar-static {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  .search-bar-static input {
+    width: 10rem;
+    font-size: 0.8rem;
+  }
+  .search-bar-static button {
+    width: 4rem;
+    font-size: 0.8rem;
+  }
+  .search-bar-hidden {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+</style>

@@ -1,0 +1,160 @@
+---
+---
+
+<section
+  id="contact"
+  class="Contact container-fluid d-flex justify-content-center align-items-center"
+>
+  <div class="Contact__content container-lg row align-items-center">
+    <div
+      class="Contact__content__text col-lg-9 col-md-7 d-flex justify-content-center align-items-center"
+    >
+      <h2 class="Contact__content__text__title">
+        Zostańmy w kontakcie! Znajdziesz nas na <b><i>Instagramie.</i></b>
+      </h2>
+    </div>
+    <div
+      class="Contact__content__other col-lg-3 col-md-5 d-flex flex-column justify-content-center"
+    >
+      <p class="Contact__content__other__p">
+        Śledź nasze najnowsze realizacje!
+      </p>
+      <button class="Contact__content__other__btn">Instagram</button>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+  .Contact {
+    &__content {
+      background-color: var(--green);
+      width: 80%;
+      height: 80%;
+
+      @media screen and (max-width: 992px) {
+        width: 95%;
+        height: 50%;
+        flex-wrap: nowrap;
+
+        &__text {
+          width: calc(7 / 12 * 100%);
+        }
+      }
+
+      &__text__title {
+        color: var(--grey);
+        font-size: 3rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        max-width: 70%;
+
+        @media screen and (max-width: 992px) {
+          font-size: 1rem;
+          max-width: none;
+        }
+
+        @media screen and (min-width: 600px) and (orientation: portrait) {
+          font-size: 2rem;
+          max-width: none;
+        }
+
+        @media screen and (min-width: 900px) and (orientation: portrait) {
+          font-size: 2.5rem;
+          max-width: 80%;
+        }
+
+        @media screen and (min-width: 2400px) {
+          font-size: 3.75rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          font-size: 5.5rem;
+        }
+
+        i {
+          font-family: "Inter", sans-serif;
+          color: var(--grey);
+        }
+      }
+
+      &__other {
+        @media screen and (max-width: 992px) {
+          width: calc(5 / 12 * 100%);
+        }
+        &__p {
+          font-size: 1.25rem;
+          color: var(--grey);
+          max-width: 70%;
+          margin-bottom: 1rem;
+          font-weight: 400;
+
+          @media screen and (max-width: 992px) {
+            font-size: 0.65rem;
+            max-width: 100%;
+          }
+
+          @media screen and (min-width: 600px) and (orientation: portrait) {
+            font-size: 1rem;
+          }
+
+          @media screen and (min-width: 900px) and (orientation: portrait) {
+            font-size: 1.5rem;
+            max-width: 100%;
+          }
+
+          @media screen and (min-width: 2400px) {
+            font-size: 1.7rem;
+            margin-bottom: 1.5rem;
+          }
+
+          @media screen and (min-width: 3200px) {
+            font-size: 3rem;
+            max-width: 80%;
+            margin-bottom: 3rem;
+          }
+        }
+
+        &__btn {
+          margin-top: 1rem;
+          width: 50%;
+          color: var(--green);
+          border: none;
+          background-color: var(--grey);
+          border-radius: 2rem;
+          padding-top: 0.6rem;
+          padding-bottom: 0.6rem;
+
+          transition: background-color 250ms;
+
+          @media screen and (max-width: 992px) {
+            font-size: 0.9rem;
+            max-width: 100%;
+            width: 90%;
+            padding-top: 0.4rem;
+            padding-bottom: 0.4rem;
+          }
+
+          @media screen and (min-width: 2400px) {
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            border-radius: 2.25rem;
+            padding-top: 0.7rem;
+            padding-bottom: 0.7rem;
+          }
+
+          @media screen and (min-width: 3200px) {
+            font-size: 2rem;
+            margin-top: 3rem;
+            border-radius: 3rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+          }
+        }
+
+        &__btn:hover {
+          background-color: var(--beige);
+        }
+      }
+    }
+  }
+</style>

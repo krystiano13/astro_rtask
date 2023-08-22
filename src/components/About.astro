@@ -1,0 +1,203 @@
+---
+---
+
+<section id="about" class="About container-fluid row">
+  <div class="About__left col-lg-5 col-md-12"></div>
+  <section
+    class="About__right col-lg-7 col-md-12 d-flex flex-column justify-content-center align-items-start"
+  >
+    <p data-aos="fade-left" class="About__right__sectionName">O firmie</p>
+    <h2 data-aos="fade-left" class="About__right__title">
+      Tworzymy <i>z pasją</i>
+    </h2>
+    <p data-aos="fade-left" class="About__right__content">
+      Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani
+      projektanci oraz architekci, których zadaniem jest rozpoznanie i
+      realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie
+      nowoczesne, które charakteryzuje minimalizm, geometria i elegancka
+      prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego
+      trybu życia.
+    </p>
+    <button
+      data-aos="fade-left"
+      class="About__right__button d-flex justify-content-center align-items-center"
+    >
+      Poznaj nas bliżej
+      <img src="./assets/rightArrowWhite.svg" alt="white arrow faced right" />
+    </button>
+  </section>
+</section>
+
+<style lang="scss">
+  .About {
+    overflow-x: hidden;
+    &__left,
+    &__right {
+      height: 100%;
+      min-height: 600px;
+    }
+
+    &__left {
+      background-image: url("../../assets/bg3.webp");
+      background-attachment: fixed;
+      background-size: 65% 100vh;
+      background-repeat: no-repeat;
+      background-position: -35%;
+      height: 100%;
+
+      @media screen and (max-width: 992px) {
+        width: 100vw;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      @media screen and (min-width: 992px) and (max-width: 1600px) {
+        background-size: 100% 100vh;
+      }
+    }
+
+    &__right {
+      background-color: var(--green);
+      height: 100%;
+
+      @media screen and (max-width: 992px) {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+
+      * {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        margin-left: 8rem;
+        color: var(--grey);
+
+        @media screen and (max-width: 992px) {
+          margin-left: 1rem;
+          margin-top: 0.75rem;
+          margin-bottom: 0.75rem;
+        }
+
+        @media screen and (min-width: 2400px) {
+          margin-left: 10rem;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          margin-left: 16rem;
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+        }
+      }
+
+      &__sectionName {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        @media screen and (min-width: 2400px) {
+          font-size: 1.3rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          font-size: 2rem;
+        }
+      }
+
+      &__title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3.5rem;
+        max-width: 30%;
+
+        @media screen and (max-width: 992px) {
+          font-size: 2.5rem;
+          max-width: 90%;
+        }
+
+        @media screen and (max-width: 1100px) {
+          max-width: 35%;
+        }
+
+        @media screen and (min-width: 2400px) {
+          font-size: 5rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          font-size: 8rem;
+        }
+
+        i {
+          font-family: "Inter", sans-serif;
+          margin: 0;
+        }
+      }
+
+      &__content {
+        max-width: 60%;
+        font-size: 1.25rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+        @media screen and (max-width: 992px) {
+          font-size: 0.9rem;
+          max-width: 80%;
+        }
+
+        @media screen and (min-width: 2400px) {
+          font-size: 1.6rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          font-size: 2.8rem;
+        }
+      }
+
+      &__button {
+        background-color: transparent;
+        border-radius: 2rem;
+        border: solid var(--grey) 2px;
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1.25rem;
+        font-weight: 400;
+
+        @media screen and (max-width: 992px) {
+          font-size: 1.1rem;
+          padding: 0.75rem;
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+        }
+
+        @media screen and (min-width: 2400px) {
+          font-size: 1.8rem;
+          padding: 1.5rem;
+          padding-left: 2rem;
+          padding-right: 2rem;
+          border-radius: 3rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          font-size: 2.6rem;
+          padding: 2.5rem;
+          padding-left: 3.5rem;
+          padding-right: 3.5rem;
+          border-radius: 5rem;
+        }
+
+        img {
+          margin: 0;
+          margin-left: 1rem;
+          transition: transform 250ms;
+
+          height: 60%;
+        }
+      }
+
+      &__button:hover {
+        img {
+          transform: translateX(25%);
+        }
+      }
+    }
+  }
+</style>

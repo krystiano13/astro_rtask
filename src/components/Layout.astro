@@ -51,4 +51,148 @@
     --dark: #111111;
     --lightGreen: #338650;
   }
+
+  .navbar {
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    background-color: white;
+    box-sizing: border-box;
+    z-index: 6000;
+
+    @media screen and (min-width: 2400px) {
+      padding: 2rem;
+    }
+
+    @media screen and (min-width: 3200px) {
+      padding: 3rem;
+      padding-left: 10rem;
+      padding-right: 10rem;
+    }
+
+    @media screen and (max-width: 992px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  .row {
+    margin: 0;
+    padding: 0;
+  }
+
+  .Intro .column,
+  .Intro-slider,
+  .Offer,
+  .About {
+    height: 90vh;
+    min-height: 600px;
+
+    @media screen and (min-width: 992px) {
+      height: 40rem;
+    }
+
+    @media screen and (min-width: 1400px) {
+      height: 52rem;
+    }
+
+    @media screen and (min-width: 1650px) {
+      height: 55rem;
+    }
+
+    @media screen and (min-width: 2400px) {
+      height: 75rem;
+    }
+
+    @media screen and (min-width: 3200px) {
+      height: 100rem;
+    }
+
+    padding: 0;
+  }
+
+  .About {
+    @media screen and (min-width: 992px) and (orientation: portrait) {
+      height: 53rem;
+    }
+
+    @media screen and (min-width: 992px) {
+      height: 53rem;
+    }
+
+    @media screen and (min-width: 1200px) {
+      height: 47rem;
+    }
+
+    @media screen and (min-width: 1650px) {
+      height: 60rem;
+    }
+
+    @media screen and (min-width: 2400px) {
+      height: 80rem;
+    }
+
+    @media screen and (min-width: 3200px) {
+      height: 100rem;
+    }
+  }
+
+  .Offer {
+    width: 100%;
+    background-color: var(--grey);
+    box-sizing: border-box;
+    height: auto;
+
+    @media screen and (min-width: 992px) and (orientation: portrait) {
+      height: auto;
+    }
+
+    @media screen and (min-width: 1650px) {
+      height: 65rem;
+    }
+
+    @media screen and (min-width: 2400px) {
+      height: 90rem;
+    }
+
+    @media screen and (min-width: 3200px) {
+      height: 150rem;
+    }
+  }
+
+  .About {
+    @media screen and (max-width: 992px) {
+      height: auto;
+    }
+  }
+
+  .Contact {
+    height: 60vh;
+    min-height: 400px;
+    background-color: var(--grey);
+  }
+
+  .Footer {
+    background-color: var(--dark);
+    width: 100%;
+    height: 40rem;
+    min-height: 400px;
+
+    @media screen and (max-width: 992px) {
+      height: 45rem;
+      padding: 0.5rem;
+    }
+
+    @media screen and (min-width: 2400px) {
+      height: 45rem;
+    }
+
+    @media screen and (min-width: 3200px) {
+      height: 65rem;
+    }
+  }
+
+  .Gallery {
+    background-color: var(--beige);
+  }
 </style>

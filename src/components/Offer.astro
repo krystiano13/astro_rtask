@@ -1,0 +1,354 @@
+---
+---
+
+<section id="offer" class="Offer container-fluid">
+  <div class="Offer__text container-fluid">
+    <p data-aos="fade-right">Oferta</p>
+    <h2 data-aos="fade-right">Działamy <i>kompleksowo</i></h2>
+    <p data-aos="fade-right" class="lead">
+      Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy
+      nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie
+      projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie
+      posłużymy radą i wieloletnim doświadczeniem.
+    </p>
+  </div>
+  <div class="Offer__cards row justify-content-evenly">
+    <section
+      class="Offer__cards__card col-md-12 col-lg-3 d-flex flex-column justify-content-center align-items-start"
+    >
+      <img class="offer-icon" src="./assets/pencil.png" alt="pencil" />
+      <h3>Projekty</h3>
+      <p>
+        Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+        wykorzystaniem istniejącej przestrzeni.
+      </p>
+      <a href="#" class="Offer__cards__card__link">
+        Dowiedz się więcej
+        <img
+          class="link-icon"
+          src="./assets/rightArrow.svg"
+          alt="arrow faced to the right"
+        />
+      </a>
+    </section>
+    <section
+      class="Offer__cards__card col-md-12 col-lg-3 d-flex flex-column justify-content-center align-items-start"
+    >
+      <img class="offer-icon" src="./assets/eye.png" alt="eye" />
+      <h3>Wizualizacje</h3>
+      <p>
+        Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru
+        animowanego w technologii 3D.
+      </p>
+      <a href="#" class="Offer__cards__card__link">
+        Dowiedz się więcej
+        <img
+          class="link-icon"
+          src="./assets/rightArrow.svg"
+          alt="arrow faced to the right"
+        />
+      </a>
+    </section>
+    <section
+      class="Offer__cards__card col-md-12 col-lg-3 d-flex flex-column justify-content-center align-items-start"
+    >
+      <img class="offer-icon" src="./assets/stars.png" alt="stars" />
+      <h3>Realizacje</h3>
+      <p>
+        Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
+        zaawansowanych technologii.
+      </p>
+      <a href="#" class="Offer__cards__card__link"
+        >Dowiedz się więcej
+        <img
+          class="link-icon"
+          src="./assets/rightArrow.svg"
+          alt="arrow faced to the right"
+        />
+      </a>
+    </section>
+  </div>
+</section>
+
+<style lang="scss">
+  .Offer {
+    &__text {
+      padding-top: 6rem;
+      padding-left: 20rem;
+
+      @media screen and (max-width: 321px) {
+        padding-left: 0;
+      }
+
+      @media screen and (max-width: 992px) {
+        padding-left: 2.5%;
+      }
+
+      @media screen and (max-width: 1200px) {
+        padding-left: 10%;
+      }
+
+      @media screen and (min-width: 1200px) {
+        padding-left: 12rem;
+      }
+
+      @media screen and (min-width: 1650px) {
+        padding-left: 20rem;
+      }
+
+      @media screen and (min-width: 2400px) {
+        padding-top: 9rem;
+        padding-left: 28rem;
+      }
+
+      @media screen and (min-width: 3200px) {
+        padding-top: 9rem;
+        padding-left: 28rem;
+      }
+
+      h2 {
+        font-size: 3rem;
+        font-family: "Montserrat", sans-serif;
+
+        @media screen and (max-width: 992px) {
+          font-size: 2.5rem;
+        }
+
+        @media screen and (max-width: 321px) {
+          font-size: 2rem;
+        }
+
+        @media screen and (min-width: 2400px) {
+          font-size: 5rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          font-size: 8rem;
+        }
+
+        i {
+          font-family: "Inter", sans-serif;
+        }
+      }
+
+      p {
+        color: var(--green);
+        max-width: 47%;
+        font-size: 1.1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0rem;
+
+        @media screen and (max-width: 992px) {
+          padding-left: 1rem;
+          max-width: 85%;
+        }
+
+        @media screen and (max-width: 321px) {
+          padding-left: 0;
+        }
+
+        @media screen and (min-width: 2400px) {
+          padding-top: 1.5rem;
+          font-size: 1.35rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          padding-top: 3rem;
+          font-size: 3rem;
+        }
+      }
+
+      h2,
+      .lead {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+
+        @media screen and (max-width: 321px) {
+          padding-left: 0;
+        }
+
+        @media screen and (max-width: 992px) and (min-width: 321px) {
+          padding-left: 1rem;
+        }
+
+        @media screen and (min-width: 2400px) {
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          padding-top: 4.5rem;
+          padding-bottom: 4.5rem;
+        }
+      }
+
+      .lead {
+        color: black;
+      }
+    }
+
+    &__cards {
+      width: 90%;
+      margin-left: 5%;
+      height: auto;
+      margin-top: 9rem;
+      padding-bottom: 9rem;
+
+      @media screen and (max-width: 1100px) {
+        flex-direction: column;
+        justify-content: end;
+      }
+
+      &__card {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 2rem;
+
+        transition: box-shadow 250ms, transform 100ms;
+        cursor: pointer;
+
+        @media screen and (max-width: 1100px) {
+          width: 100%;
+          margin-bottom: 1.5rem;
+        }
+
+        @media screen and (max-width: 992px) {
+          height: 30rem;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+
+        @media screen and (min-width: 1200px) {
+          height: 25rem;
+        }
+
+        @media screen and (min-width: 2400px) {
+          padding: 2.5rem;
+          margin-top: 3rem;
+          height: 40rem;
+        }
+
+        @media screen and (min-width: 3200px) {
+          padding: 5rem;
+          margin-top: 6rem;
+          height: 50rem;
+        }
+
+        * {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+
+          @media screen and (min-width: 2400px) {
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+          }
+
+          @media screen and (min-width: 3200px) {
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+          }
+        }
+
+        h3 {
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          letter-spacing: -1px;
+          font-size: 1.75rem;
+
+          @media screen and (min-width: 1200px) {
+            font-size: 1.5rem;
+          }
+
+          @media screen and (min-width: 2400px) {
+            font-size: 2.25rem;
+          }
+
+          @media screen and (min-width: 3200px) {
+            font-size: 4rem;
+          }
+        }
+
+        p {
+          max-width: 95%;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+          font-size: 1rem;
+
+          @media screen and (min-width: 992px) and (max-width: 1100px) {
+            max-width: 100%;
+          }
+
+          @media screen and (min-width: 2400px) {
+            font-size: 1.5rem;
+          }
+
+          @media screen and (min-width: 3200px) {
+            font-size: 2rem;
+          }
+        }
+
+        &__link {
+          margin-top: 3rem;
+          width: auto;
+          color: var(--green);
+          cursor: pointer;
+          border-bottom: solid var(--green) 2px;
+          text-decoration: none;
+          transition: 250ms;
+
+          display: flex;
+          align-items: center;
+
+          .link-icon {
+            height: 50%;
+            margin-left: 1rem;
+            transition: 250ms;
+
+            @media screen and (min-width: 1200px) {
+              height: 40%;
+            }
+          }
+
+          @media screen and (min-width: 1200px) {
+            margin-top: 1rem;
+          }
+
+          @media screen and (min-width: 2400px) {
+            font-size: 1.25rem;
+          }
+
+          @media screen and (min-width: 3200px) {
+            font-size: 1.5rem;
+          }
+        }
+
+        &__link:hover {
+          color: var(--lightGreen);
+
+          .link-icon {
+            transform: translateX(25%);
+          }
+        }
+
+        .offer-icon {
+          margin-bottom: 2rem;
+          height: 2.35rem;
+
+          @media screen and (min-width: 2400px) {
+            height: 2.85rem;
+            margin-bottom: 2.6rem;
+          }
+        }
+      }
+
+      &__card:hover {
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+          rgba(17, 17, 26, 0.05) 0px 8px 32px;
+      }
+
+      &__card:active {
+        transform: scale(1.02);
+      }
+    }
+  }
+</style>

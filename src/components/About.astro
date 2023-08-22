@@ -1,4 +1,5 @@
 ---
+import bg3 from './assets/bg3.webp';
 ---
 
 <section id="about" class="About container-fluid row">
@@ -28,7 +29,7 @@
   </section>
 </section>
 
-<style lang="scss">
+<style define:vars="bg3" lang="scss">
   .About {
     overflow-x: hidden;
     &__left,
@@ -38,7 +39,7 @@
     }
 
     &__left {
-      background-image: url("./astro_rtask/assets/bg3.webp");
+      background-image: url(var(--bg3));
       background-attachment: fixed;
       background-size: 65% 100vh;
       background-repeat: no-repeat;

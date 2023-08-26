@@ -2,7 +2,7 @@
 
 <h3>Link to the <a href="https://github.com/krystiano13/rtask">original project repo</a></h3>
 
-<h3>Link to <a href="https://github.com/krystiano13/astro_rtask">live version</a></h3>
+<h3>Link to <a href="https://krystiano13.github.io/astro_rtask/">live version</a></h3>
 
 <h3>How to edit:</h3>
 <ul>
